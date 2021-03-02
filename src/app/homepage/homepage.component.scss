@@ -1,0 +1,66 @@
+$primary-color: #F9A826;
+
+* {
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+.btn-outline-warning {
+    padding: 15px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-outline-warning:hover {
+    a {
+        color: rgb(80, 80, 80);
+        transition: all 0.4s ease-in;
+        cursor: pointer;
+    }
+}
+
+.corona-cases {
+    text-align: left;
+    margin-top: 20vh;
+    margin-left: 20vh;
+
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 24px;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+}
+
+.homepage-img {
+    margin-top: 18vh;
+    text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .homepage-img {
+        margin-top: 5vh;
+    }
+
+    .corona-cases {
+        margin: 8vh auto;
+        text-align: center;
+        width: 70%;
+
+        h1 {
+            font-size: 4rem
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+}

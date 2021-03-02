@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="countries-title">
+        <h1 class="country-text">Countries</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let country of countries; index as i" style="width: 18rem;">
+            <div class="card text-dark bg-warning mb-3" >
+                <div class="card-body" >
+                  <h4 class="card-title">{{this.countries[i]}}</h4>
+                  <p class="card-text">New cases: {{this.countryNewConfirmed[i].toLocaleString()}}</p>
+                  <p class="card-text">Total cases: {{this.countryTotalConfirmed[i].toLocaleString()}}</p>
+                  <p class="card-text">New Deaths: {{this.countryNewDeaths[i].toLocaleString()}}</p>
+                  <p class="card-text">Total Deaths: {{this.countryTotalDeaths[i].toLocaleString()}}</p>
+                  <p class="card-text">New Recovered: {{this.countryNewRecovered[i].toLocaleString()}}</p>
+                  <p class="card-text">Total Recovered: {{this.countryTotalRecovered[i].toLocaleString()}}</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
