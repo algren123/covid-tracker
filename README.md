@@ -9,3 +9,5 @@ LIVE: https://algren123.github.io/covid-tracker/
 # Upcoming updates
 
 I plan on adding a search filter to the Countries tab to make the user able to filter out the country he wants.
+
+Create night-mode toggle button
