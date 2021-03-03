@@ -10,3 +10,15 @@
     text-align: center;
     margin-top: 3vh;
 }
+
+.filter-input {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 3vh;
+
+    p {
+        margin: 0;
+        margin-right: 10px;
+    }
+}
