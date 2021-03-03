@@ -17,7 +17,6 @@ export class HomepageComponent implements OnInit {
     this.dataService.getSummaryData()
     .subscribe((data) => {
       this.summaryData = data;
-      console.log(this.summaryData);
     })
   }
 

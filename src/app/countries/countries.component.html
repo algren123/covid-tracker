@@ -2,17 +2,21 @@
     <div class="countries-title">
         <h1 class="country-text">Countries</h1>
     </div>
+
+    <div class="filter-input">
+        <input type="search" [(ngModel)]="searchText">
+    </div>
     <div class="row">
-        <div class="col-lg-4" *ngFor="let country of countries; index as i" style="width: 18rem;">
+        <div class="col-lg-4" *ngFor="let country of countries.country | filter: searchText" style="width: 18rem;">
             <div class="card text-dark bg-warning mb-3" >
                 <div class="card-body" >
-                  <h4 class="card-title">{{this.countries[i]}}</h4>
-                  <p class="card-text">New cases: {{this.countryNewConfirmed[i].toLocaleString()}}</p>
-                  <p class="card-text">Total cases: {{this.countryTotalConfirmed[i].toLocaleString()}}</p>
-                  <p class="card-text">New Deaths: {{this.countryNewDeaths[i].toLocaleString()}}</p>
-                  <p class="card-text">Total Deaths: {{this.countryTotalDeaths[i].toLocaleString()}}</p>
-                  <p class="card-text">New Recovered: {{this.countryNewRecovered[i].toLocaleString()}}</p>
-                  <p class="card-text">Total Recovered: {{this.countryTotalRecovered[i].toLocaleString()}}</p>
+                  <h4 class="card-title">{{this.country.name}}</h4>
+                  <p class="card-text">New cases: {{this.country.NewConfirmed.toLocaleString()}}</p>
+                  <p class="card-text">Total cases: {{this.country.TotalConfirmed.toLocaleString()}}</p>
+                  <p class="card-text">New Deaths: {{this.country.NewDeaths.toLocaleString()}}</p>
+                  <p class="card-text">Total Deaths: {{this.country.TotalDeaths.toLocaleString()}}</p>
+                  <p class="card-text">New Recovered: {{this.country.NewRecovered.toLocaleString()}}</p>
+                  <p class="card-text">Total Recovered: {{this.country.TotalRecovered.toLocaleString()}}</p>
                 </div>
               </div>
         </div>
