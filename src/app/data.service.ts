@@ -13,7 +13,7 @@ export class DataService {
   ) { }
 
   
-
+  // API call
   getSummaryData() {
     return this.http.get(this.summaryData);
   }

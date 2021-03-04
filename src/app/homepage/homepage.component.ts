@@ -13,6 +13,7 @@ export class HomepageComponent implements OnInit {
     private dataService: DataService
   ) { }
 
+  // Stores the API data in summaryData
   ngOnInit(): void {
     this.dataService.getSummaryData()
     .subscribe((data) => {

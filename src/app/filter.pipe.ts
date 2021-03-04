@@ -5,6 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterPipe implements PipeTransform {
 
+  //The pipe checks what the user inputs and filters it
   transform(items: any[], searchText: string): any[] {
     if (!items) {
       return [];
